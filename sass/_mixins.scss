@@ -1,0 +1,31 @@
+
+btn_orange {
+  background: $color-warning;
+  color: $color-light;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  
+  text-align: center;
+
+  &:hover {
+    background: $color-warning-light;
+  }
+}
+
+btn_grey {
+  background: $color-medium;
+  color: $color-light;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background: $color-warning-light;
+  }
+}
