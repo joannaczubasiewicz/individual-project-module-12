@@ -26,45 +26,45 @@ h1 {
     font-size: 30px;
     font-family: $paragraph-font;
     font-weight: $font-semibold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h2 {
     font-size: 27px;
     font-family: $paragraph-font;
     font-weight: $font-semibold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h3 {
     font-size: 25px;
     font-family: $paragraph-font;
     font-weight: $font-bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h4 {
     font-size: 22px;
     font-family: $paragraph-font;
     font-weight: $font-bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h5 {
     font-size: 20px;
     font-family: $paragraph-font;
     font-weight: $font-bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
 h6 {
     font-size: 18px;
     font-family: $paragraph-font;
     font-weight: $font-bold;
-    text-transform: uppercase;
+    //text-transform: uppercase;
 }
 
-a {
+/*a {
     text-decoration: none;
     text-align: center;
     border-radius: $radius;
@@ -74,9 +74,9 @@ a {
     border-style: solid;
     padding: 12px;
     &:hover {
-        colour: $color-danger;
+        color: $color-danger;
     }
-}
+}*/
 
 p {
     font-size: $paragraph-font-size;
@@ -91,7 +91,7 @@ ul {
 
 
 
-a {
+/*a {
     display: inline-block;
     text-decoration: none;
     background: #F37335;
@@ -104,4 +104,84 @@ button {
     border: none;
     border-radius: 5%;
     font-weight: lighter;
+}*/
+
+.btn_orange {
+  background: $color-warning;
+  color: $color-white;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;  
+  text-align: center;
+	cursor: pointer;
+
+  &:hover {
+    background: $color-warning-light;
+  }
+}
+
+.btn_grey {
+  background: $color-medium;
+  color: $color-white;
+  border-radius: $radius;
+  transition: $transition;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+	cursor: pointer;
+
+  &:hover {
+    background: $color-medium-light;
+  }
+}
+
+/*Sidebar*/
+.container__sidebar {
+	background: $color-dark;
+		text-decoration: none;
+	.sidebar__logo {
+		font-family: $logo-font;
+		color:$color-white;
+		margin: 5px 5px;
+	}
+	.sidebar__toggle__btn{
+		position: absolute;
+		top: 20px;
+		left: 150px;
+		.span{
+			display: block;
+			width: 30px;
+			height: 5px;
+			background: $color-light;
+			margin: 3px 0px;
+		}
+	}
+
+}
+
+.sidebar__menu{
+	border-bottom: 1px solid $color-light;
+}
+.sidebar__menu__item {
+	padding:15px 10px;
+	list-style: none;
+	line-height: 15px;
+	a {
+		text-decoration:none;
+		color:$color-breze;
+		
+	}
+
+	&:hover{
+		color: $color-white;
+		background: $color-medium;
+	}
+}
+
+/*Topbar*/
+.topbar__item{
+	line-height: 15px;
 }

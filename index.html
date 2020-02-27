@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Individual project</title>
-		<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap&subset=latin-ext" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-		<link rel="stylesheet" href="style.scss">
-	
-	</head>
-	<body>
-		<div class="container">  			
-			<div class="sidebar">
-        <h3 class="sidebar__logo"></h3>
-        <ul class="sidebar__menu">
-          <li class="sidebar__menu__item"></li>
-          <li class="sidebar__menu__item"></li>
-          <li class="sidebar__menu__item"></li>
-          <li class="sidebar__menu__item">Lorem ipsum dolor</li>
-          <li class="sidebar__menu__item">Lorem ipsum dolor</li>
-        </ul>  
-			</div>  
-    
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__sidebar">
+						<div class="sidebar__logo__row">
+            	<h4 class="sidebar__logo"> Just do it</h4>
+							<div class="sidebar__toggle__btn>"
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>	
+						</div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__menu__item"><a href="#">General</a></li>
+                <li class="sidebar__menu__item"><a href="#">Details</a></li>
+                <li class="sidebar__menu__item"><a href="#">Links</a></li>
+                <li class="sidebar__menu__item"><a href="#">Banners</a></li>
+                <li class="sidebar__menu__item"><a href="#">Personal data</a></li>
+								<li class="sidebar__menu__item"><a href="#">Payout</a></li>
+                <li class="sidebar__menu__item"><a href="#">Postback</a></li>
+            </ul>
+        </div>
+
         <div class="container__topbar">topbar
-			</div>
+					<ul>
+						<li class="topbar__item"><img src="vendor/icons/wallet.svg"></li>
+						<li class="topbar__item"><img src="vendor/icons/notification.svg"></li>
+						<li class="topbar__item"><img src="vendor/icons/profile.svg"></li>
+						<li class="topbar__item"><img src="vendor/icons/quit.svg"></li>
+					</ul>
+        </div>
         <div class="container__content">
-          <div class="content">content1
-            
-				<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-          </div>
-          <div class="content">content2
-           
-				<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-          </div>
-  </div>
+            <div class="content__row">
+							<div class="content__row__header">
+								<h6>General Satistic</h6>
+							</div>
+							<div class="content__row__card">
+							</div>
+							
+                
+            </div>
+            <div class="content__row">
+							<div class="content__row__header">
+								<h6>Links</h6>
+							</div>
+							<div class="content__row__card">
+							</div>
 
-		</div>
-	</body>
+                
+            </div>
+        </div>
 
-</html>	
+    </div>
+</body>
+
+</html>

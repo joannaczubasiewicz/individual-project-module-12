@@ -1,7 +1,7 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
-btn_orange {
+.btn_orange {
   background: #f58220;
   color: #f5f5f2;
   border-radius: 4px;
@@ -12,11 +12,11 @@ btn_orange {
   text-align: center;
 }
 
-btn_orange:hover {
+.btn_orange:hover {
   background: #ffa200;
 }
 
-btn_grey {
+.btn_grey {
   background: #979797;
   color: #f5f5f2;
   border-radius: 4px;
@@ -27,7 +27,7 @@ btn_grey {
   text-align: center;
 }
 
-btn_grey:hover {
+.btn_grey:hover {
   background: #ffa200;
 }
 
@@ -387,7 +387,7 @@ template {
 .container__topbar {
   border: 2px solid green;
   width: 100%;
-  height: 50px;
+  height: 30px;
   position: fixed;
   z-index: 1;
   text-align: right;
@@ -397,7 +397,7 @@ template {
 .sidebar {
   border: 2px solid red;
   height: 100%;
-  width: 10%;
+  width: 100px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -406,11 +406,12 @@ template {
 
 .container__content {
   border: 2px solid blue;
-  margin: 5% 1% 0;
+  margin: 6% 1% 0;
+  width: 80%;
 }
 
-.content {
-  padding: 1%;
+.content__row {
+  height: 40%;
 }
 
 /* Components */
@@ -427,59 +428,51 @@ h1 {
   font-size: 30px;
   font-family: "Roboto Condensed";
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 27px;
   font-family: "Roboto Condensed";
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 h3 {
   font-size: 25px;
   font-family: "Roboto Condensed";
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h4 {
   font-size: 22px;
   font-family: "Roboto Condensed";
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h5 {
   font-size: 20px;
   font-family: "Roboto Condensed";
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 h6 {
   font-size: 18px;
   font-family: "Roboto Condensed";
   font-weight: 700;
-  text-transform: uppercase;
 }
 
-a {
-  text-decoration: none;
-  text-align: center;
-  border-radius: 4px;
-  transition: all 0.3s;
-  display: inline-block;
-  border-width: 1px;
-  border-style: solid;
-  padding: 12px;
-}
-
-a:hover {
-  colour: #ff0000;
-}
-
+/*a {
+    text-decoration: none;
+    text-align: center;
+    border-radius: $radius;
+    transition: $transition;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    padding: 12px;
+    &:hover {
+        color: $color-danger;
+    }
+}*/
 p {
   font-size: 16px;
   font-family: "Roboto Condensed";
@@ -491,18 +484,99 @@ ul {
   font-weight: 500;
 }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-  background: #F37335;
+/*a {
+    display: inline-block;
+    text-decoration: none;
+    background: #F37335;
+    color: #ffffff;
+}
+button {
+    background: #F37335;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5%;
+    font-weight: lighter;
+}*/
+.btn_orange {
+  background: #f58220;
   color: #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: inline-block;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
 }
 
-button {
-  background: #F37335;
+.btn_orange:hover {
+  background: #ffa200;
+}
+
+.btn_grey {
+  background: #979797;
   color: #ffffff;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: inline-block;
   padding: 12px;
-  border: none;
-  border-radius: 5%;
-  font-weight: lighter;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_grey:hover {
+  background: #e3e3e3;
+}
+
+/*Sidebar*/
+.container__sidebar {
+  background: #333333;
+  text-decoration: none;
+}
+
+.container__sidebar .sidebar__logo {
+  font-family: "Sedgwick Ave";
+  color: #ffffff;
+  margin: 5px 5px;
+}
+
+.container__sidebar .sidebar__toggle__btn {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+}
+
+.container__sidebar .sidebar__toggle__btn .span {
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #f5f5f2;
+  margin: 3px 0px;
+}
+
+.sidebar__menu {
+  border-bottom: 1px solid #f5f5f2;
+}
+
+.sidebar__menu__item {
+  padding: 15px 10px;
+  list-style: none;
+  line-height: 15px;
+}
+
+.sidebar__menu__item a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+.sidebar__menu__item:hover {
+  color: #ffffff;
+  background: #979797;
+}
+
+/*Topbar*/
+.topbar__item {
+  line-height: 15px;
 }
