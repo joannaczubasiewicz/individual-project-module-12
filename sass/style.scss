@@ -2,6 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+@import "fonts";
 
 /* Components */
 
@@ -16,11 +17,12 @@
 //@import "pages/registration";
 
 /*Global*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-		}
+}
 
 h1 {
     font-size: 30px;
@@ -64,6 +66,7 @@ h6 {
     //text-transform: uppercase;
 }
 
+
 /*a {
     text-decoration: none;
     text-align: center;
@@ -89,99 +92,92 @@ ul {
     font-weight: $font-semibold;
 }
 
-
-
-/*a {
-    display: inline-block;
-    text-decoration: none;
-    background: #F37335;
-    color: #ffffff;
-}
-button {
-    background: #F37335;
-    color: #ffffff;
-    padding: 12px;
-    border: none;
-    border-radius: 5%;
-    font-weight: lighter;
-}*/
-
 .btn_orange {
-  background: $color-warning;
-  color: $color-white;
-  border-radius: $radius;
-  transition: $transition;
-  display: inline-block;
-  padding: 12px;
-  text-decoration: none;  
-  text-align: center;
-	cursor: pointer;
-
-  &:hover {
-    background: $color-warning-light;
-  }
+    background: $color-warning;
+    color: $color-white;
+    border-radius: $radius;
+    transition: $transition;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background: $color-warning-light;
+    }
 }
 
 .btn_grey {
-  background: $color-medium;
-  color: $color-white;
-  border-radius: $radius;
-  transition: $transition;
-  display: inline-block;
-  padding: 12px;
-  text-decoration: none;
-  text-align: center;
-	cursor: pointer;
-
-  &:hover {
-    background: $color-medium-light;
-  }
+    background: $color-medium;
+    color: $color-white;
+    border-radius: $radius;
+    transition: $transition;
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background: $color-medium-light;
+    }
 }
+
 
 /*Sidebar*/
+
 .container__sidebar {
-	background: $color-dark;
-		text-decoration: none;
-	.sidebar__logo {
-		font-family: $logo-font;
-		color:$color-white;
-		margin: 5px 5px;
-	}
-	.sidebar__toggle__btn{
-		position: absolute;
-		top: 20px;
-		left: 150px;
-		.span{
-			display: block;
-			width: 30px;
-			height: 5px;
-			background: $color-light;
-			margin: 3px 0px;
-		}
-	}
-
+    background: $color-dark;
+    text-decoration: none;
+    .sidebar__logo {
+        font-family: $logo-font;
+        color: $color-white;
+        margin: 5px 5px;
+    }
+    .sidebar__toggle__btn {
+        position: absolute;
+        top: 20px;
+        left: 150px;
+        .span {
+            display: block;
+            width: 30px;
+            height: 5px;
+            background: $color-light;
+            margin: 3px 0px;
+        }
+    }
 }
 
-.sidebar__menu{
-	border-bottom: 1px solid $color-light;
+.sidebar__menu {
+    border-bottom: 1px solid $color-light;
 }
+
 .sidebar__menu__item {
-	padding:15px 10px;
-	list-style: none;
-	line-height: 15px;
-	a {
-		text-decoration:none;
-		color:$color-breze;
-		
-	}
-
-	&:hover{
-		color: $color-white;
-		background: $color-medium;
-	}
+    padding: 15px 10px;
+    list-style: none;
+    line-height: 15px;
+    a {
+        text-decoration: none;
+        color: $color-breze;
+    }
+    &:hover {
+        color: $color-white;
+        background: $color-medium;
+    }
 }
+
 
 /*Topbar*/
-.topbar__item{
-	line-height: 15px;
+
+.container__topbar ul {
+		list-style-type: none;
+		.topbar__item {
+			line-height: 15px;
+			display: inline-block;
+			margin-left: 36px;
+			border-left: 1px solid $color-breze;
+			padding: 5px 30px;
+	}
+    
 }
+
+/*Content*/
